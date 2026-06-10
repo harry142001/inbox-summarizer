@@ -1,0 +1,135 @@
+.card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: box-shadow 0.2s;
+}
+
+.card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem 1.5rem;
+  cursor: pointer;
+}
+
+.card-header:hover {
+  background: #f9fafb;
+}
+
+.card-left {
+  flex: 1;
+}
+
+.card-badges {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.badge-category {
+  font-size: 11px;
+  font-weight: 500;
+  padding: 2px 8px;
+  border-radius: 20px;
+  color: white;
+}
+
+.badge-priority {
+  font-size: 11px;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 20px;
+  color: white;
+}
+
+.badge-cache {
+  font-size: 11px;
+  padding: 2px 8px;
+  border-radius: 20px;
+  background: #f3f4f6;
+  color: #6b7280;
+  border: 1px solid #e5e7eb;
+}
+
+.card-subject {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  color: #1a1a1a;
+}
+
+.card-sender {
+  font-size: 0.8rem;
+  color: #888;
+}
+
+.card-arrow {
+  color: #aaa;
+  font-size: 0.75rem;
+  margin-left: 1rem;
+}
+
+.card-body {
+  border-top: 1px solid #f0f0f0;
+  background: #fafafa;
+}
+
+.card-section {
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.card-section:last-child {
+  border-bottom: none;
+}
+
+.card-section h4 {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #888;
+  margin-bottom: 0.5rem;
+}
+
+.card-summary {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+.action-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.action-list li {
+  font-size: 0.875rem;
+  color: #444;
+  padding-left: 1rem;
+  position: relative;
+  line-height: 1.5;
+}
+
+.action-list li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: #4f46e5;
+}
+
+.priority-reason {
+  font-size: 0.875rem;
+  color: #666;
+  line-height: 1.5;
+  font-style: italic;
+}
